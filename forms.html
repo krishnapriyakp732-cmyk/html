@@ -3,37 +3,49 @@
 <title>forms</title>
 </head>
 <body>
+<h2><u>Registration Form</u></h2>
 <form>
-<label>Name:</label>
-<input type="text" name="name"><br>
-<label>Password:</label>
-<input type="password" name="password"><br>
-<label>Mobile:</label>
-<input type="number" name="mobile"><br>
-<label>Email:</label>
-<input type="email" name="email"><br>
-<label>Address:</label>
-<input type="textarea"name="address" ><br>
-Gender:
-<input type="radio" name="gender" value="male" >
-Male
+<label>Name:&nbsp&nbsp &nbsp &nbsp </label>
+<input type="text" name="name"><br><br>
+<label>Password:&nbsp </label>
+<input type="password" name="password"><br><br>
+<label>Mobile:&nbsp&nbsp &nbsp</label>
+<input type="number" name="mobile"><br><br>
+<label>Address:&nbsp&nbsp&nbsp </label>
+<textarea id ="address" name="address" rows="1" ></textarea><br><br>
+<label>DOB:&nbsp &nbsp &nbsp &nbsp&nbsp</label>
+<input type="date" name="dob"><br><br>
+<label>Email:&nbsp &nbsp &nbsp &nbsp</label>
+<input type="email" name="email"><br><br>
+<label>Gender:&nbsp&nbsp&nbsp  </label>
+<input type="radio" name="gender" value="male" checked>
+<label>Male</label>
 <input type="radio" name="gender" value="female">
-Female
+<label>Female</label>
 <input type="radio" name="gender" value="other">
-Other
+<label>Other</label>
+<br><br>
+<fieldset>
+<legend>Languages Knows:</legend><br>
+<input type="checkbox" id="hindi" name="languages" value="hindi">
+<label for="hindi">Hindi</label><br>
+<input type="checkbox" id="english" name="languages" value="English">
+<label for="english">English</label><br>
+<input type="checkbox" id="malayalam" name="languages" value="malayalam">
+<label for="malayalam">Malayalam</label>
+</fieldset>
 <br>
 <label >Nationality:</label>
-<select name="nationality" id="nationality">
-<option>Select</option>
+<select name="nationality" id="nationality" >
 <option value="IN">Indian</option>
 <option value="US">American</option>
-<option value="GB">British</option>
 <option value="CA">Canadian</option>
-<option value="AU">Australian</option>
+<br>
 </select>
 <br>
 <br>
-<input type="submit" value="Submit"><br>
+ <button>Submit</button>
+<button>Cancel</button>
 </form>
 </body>
 </html>
