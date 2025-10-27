@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>Internal CSS Example</title>
+<style>
+  
+    body {
+        background-color: antiquewhite;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        color: darkgreen;
+        font-family: Arial, sans-serif;
+    }
+
+    p {
+        font-family: Andale Mono, monospace;
+        color: blue;
+    }
+
+    h3 {
+        font-family: Gill Sans, sans-serif;
+    }
+
+    h3.mystery {
+        color: chocolate;
+    }
+
+    h3.fiction {
+        color: brown;
+    }
+
+    ul {
+        color: green;
+        font-family: Snell Roundhand, cursive;
+    }
+
+    ol {
+        color: crimson;
+        font-family: OCR A Std, monospace;
+    }
+
+    dt.mystery {
+        color: chocolate;
+        font-family: Gill Sans, sans-serif;
+    }
+
+    dd.mystery {
+        color: green;
+        font-family: Snell Roundhand, cursive;
+    }
+
+    dt.fiction {
+        color: brown;
+        font-family: Gill Sans, sans-serif;
+    }
+
+    dd.fiction {
+        color: crimson;
+        font-family: OCR A Std, monospace;
+    }
+
+  
+    table {
+        border-collapse: collapse;
+        width: 30%;
+        margin: 20px auto;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: purple;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+</style>
+</head>
+<body>
+    <h1>Books</h1>
+    <p>A book is a structured presentation of recorded information, primarily verbal and graphical, through a medium.</p>
+
+    <h3 class="mystery">Mystery Books</h3>
+    <ul>
+        <li>The Silent Patient</li>
+        <li>The Moonstone</li>
+      
+    </ul>
+
+    <dl>
+        <dt class="mystery">About Mystery Books:</dt>
+        <dd class="mystery">Mystery is a genre that presents and solves a crime</dd>
+    </dl>
+
+    <h3 class="fiction">Fiction Books</h3>
+    <ol>
+        <li>Harry Potter</li>
+      
+        <li>The Alchemist</li>
+    </ol>
+
+    <dl>
+        <dt class="fiction">About Fiction Books:</dt>
+        <dd class="fiction">A work of fiction is created in the imagination of its author</dd>
+    </dl>
+
+    <h2 style="text-align:center;color:purple;">Student Marks Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>book name </th>
+                <th>author<\th>           
+               <th>pub.year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>the silent patient</td>
+                <td>alex</td>
+                <td>2019</td>
+            </tr>
+            <tr>
+                <td>the moon stone</td>
+                <td>w.collins</td>
+                <td>1868</td>
+            </tr>
+            <tr>
+                <td>Harry Potter</td>
+                <td>j.k.rowling</td>
+                <td>1997</td>
+            </tr>
+            <tr>
+                <td>the Alchemist</td>
+                <td>paulo coelho</td>
+                <td>1988</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
