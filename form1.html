@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #fff;
+            color: #000;
+        }
+
+        form {
+            padding: 20px 30px;
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px; 
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 250px;
+            padding: 6px 8px;
+            font-size: 14px;
+            border: none; 
+            outline: 1px solid #ccc; 
+            border-radius: 3px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        fieldset {
+    border: 1px solid #000; /* or none if you want no border */
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-bottom: 12px;
+}
+        button:hover {
+            text-decoration: underline;
+        }
+
+        .gender-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .gender-row label {
+            width: auto; 
+        }
+
+        .button-center {
+           
+            margin-top: 15px;
+        }
+		.checkbox-column label {
+         display: block;
+         margin-bottom: 5px;
+         }
+
+
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>REGISTRATIN FORM</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br><br>
+		  <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br><br>
+
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password"><br><br>
+
+        <label for="mobile">Mobile:</label>
+        <input type="number" name="mobile" id="mobile"><br><br>
+   <label for="dob">DOB:</label>
+        <input type="date" name="dob" id="dob"><br><br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="2"></textarea><br><br>
+
+     
+
+      
+    
+        <div class="gender-row">
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="male" checked> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </div><br>
+  <label for="nationality">Nationality:</label>
+        <select name="nationality" id="nationality">
+		 <option>select</option>
+            <option value="IN">Indian</option>
+            <option value="US">American</option>
+            <option value="CA">Canadian</option>
+        </select><br><br>
+
+      <fieldset>
+    <legend>Languages Known</legend>
+    <label><input type="checkbox" name="languages" value="hindi"> Hindi</label><br>
+    <label><input type="checkbox" name="languages" value="english"> English</label><br>
+    <label><input type="checkbox" name="languages" value="malayalam"> Malayalam</label>
+</fieldset>
+		
+      
+        <div class="button-center">
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
