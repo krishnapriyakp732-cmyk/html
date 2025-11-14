@@ -19,7 +19,6 @@ img {
   font-weight: bold;
 }
 </style>
-
 <script>
 function one() {
   document.getElementById("img").src = "fast1.jpg";
@@ -28,13 +27,12 @@ function one() {
 }
 
 function two() {
-  document.getElementById("img").src = "fast2.png";
+  document.getElementById("img").src = "fast2.jpg";
   document.getElementById("p1").innerHTML = "onmouseout";
   document.getElementById("p1").style.color = "red";
 }
 </script>
 </head>
-
 <body>
 <img src="fast3.jpg" id="img" onmouseover="one()" onmouseout="two()"> 
 <b><p id="p1"></p></b> 
