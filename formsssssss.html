@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+
+      </style>
+      <form>
+<body>
+
+    <h2>REGISTRATION FORM</h2>
+
+    <!-- Name -->
+    <div>
+        <label>Name:</label>
+        <input type="text">
+    </div><br>
+
+    <!-- Email -->
+    <div>
+        <label>Email:</label>
+        <input type="email">
+    </div><br>
+
+    <!-- Password -->
+    <div>
+        <label>Password:</label>
+        <input type="password">
+    </div><br>
+
+    <!-- Phone -->
+    <div>
+        <label>Phone Number:</label>
+        <input type="text">
+    </div><br>
+
+    <!-- Gender -->
+    <div>
+        <label>Gender:</label>
+        <input type="radio" name="gender" checked> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+    </div><br>
+
+    <!-- DOB -->
+    <div>
+        <label>DOB:</label>
+        <input type="date">
+    </div><br>
+
+    <!-- Address -->
+    <div>
+        <label>Address:</label>
+        <textarea rows="3"></textarea>
+    </div><br>
+
+    <!-- Nationality -->
+    <div>
+        <label>Nationality:</label>
+        <select>
+            <option>select</option>
+            <option>Indian</option>
+            <option>American</option>
+            <option>Canadian</option>
+        </select>
+    </div><br>
+
+    <!-- Languages -->
+    <fieldset>
+        <legend>Languages Known</legend>
+        <input type="checkbox"> Hindi <br>
+        <input type="checkbox"> English <br>
+        <input type="checkbox"> Malayalam
+    </fieldset><br>
+
+    <!-- Buttons -->
+    <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+    </div>
+
+</form>
+
+</body>
+</html>
