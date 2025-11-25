@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+
+      
+        .gender-row {
+            display: flex;
+            align-items: center;
+        }
+        .gender-row > label {
+            width: 120px;
+        }
+        .gender-options label {
+            margin-right: 15px;
+            width: auto;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+<form>
+
+    <h2>REGISTRATION FORM</h2><br>
+
+    <label>Name:</label>
+    <input type="text"><br><br>
+
+    <label>Email:</label>
+    <input type="email"><br><br>
+
+    <label>Password:</label>
+    <input type="password"><br><br>
+
+    <label>Phone Number:</label>
+    <input type="text"><br><br>
+
+    
+    <div class="gender-row">
+        <label>Gender:</label>
+
+        <div class="gender-options">
+            <label><input type="radio" name="gender" checked> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Other</label>
+        </div>
+    </div><br>
+
+    <label>DOB:</label>
+    <input type="date"><br><br>
+
+    <label>Address:</label>
+    <textarea rows="3"></textarea><br><br>
+
+    <label>Nationality:</label>
+    <select>
+        <option>select</option>
+        <option>Indian</option>
+        <option>American</option>
+        <option>Canadian</option>
+    </select><br><br>
+
+    <fieldset>
+        <legend>Languages Known</legend>
+        <label><input type="checkbox"> Hindi</label><br>
+        <label><input type="checkbox"> English</label><br>
+        <label><input type="checkbox"> Malayalam</label>
+    </fieldset><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Cancel</button>
+
+</form>
+
+</body>
+</html>
